@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#188de7">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <title>Awesome Builder</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="assets/img/favicon.icon.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+            <img src="assets/img/logo.png" alt="logo">
+        </a>
+            <nav class="header_navigation">
+                <a href="index.html">Genplan</a>
+                <a href="build-item.html">Build-item</a>
+                <a href="floor-item.html">Floor-item</a>
+                <a href="flat-item.html">Flat-item</a>
+            </nav>
+            <!-- <div class="btn_row">
+            <button class="btn modal_btn" data-trigger-modal="sold">bild</button>
+            <button class="btn modal_btn" data-trigger-modal="sold_floor">floor</button>
+            <button class="btn modal_btn" data-trigger-modal="sold_flat">flat</button>
+            <button class="btn modal_btn" data-trigger-modal="success_flat">flat success</button>
+            <button class="btn modal_btn" data-flat-trigger="1">1</button>
+            <button class="btn modal_btn" data-flat-trigger="2">2</button>
+            <button class="btn modal_btn" data-flat-trigger="3">3</button>
+            <button class="btn modal_btn" data-flat-trigger="4">4</button>
+            <button class="btn modal_btn" data-flat-trigger="5">5</button>
+            <button class="btn modal_btn" data-flat-trigger="6">6</button>
+            <button class="btn modal_btn" data-flat-trigger="7">7</button>
+            <button class="btn modal_btn" data-flat-trigger="8">8</button>
+            <button class="btn modal_btn" data-flat-trigger="9">9</button>
+        </div> -->
+        </div>
+    </header>
+
+
+    <main class="wrapper home">
+        <section class="genplan-page">
+            <div class="genplan">
+                <svg class="buld" viewBox="0 0 3000 1837">
+                    <image xlink:href="assets/img/genplan.png" />
+                    <a href="build-item.html" class="item_link">
+                <path id="1" class="build_item" data-address="Садова 14" data-flats="42" data-flats-booked="22" data-flats-sold="18" d="M2449 234L2998.5 205.5V1694.5L2825 1689.5L2471 1682L2418.5 1649L2177 1490.5L2174 1242H2178V838.5H2175V646.5L2184.5 636.5V612L2205 584.5V568.5L2449 234Z"/>
+            </a>
+                    <a href="build-item.html" class="item_link">
+                <path id="2" class="build_item" data-address="Садова 11" data-flats="40" data-flats-booked="18" data-flats-sold="11" d="M691 348.5L1.5 382V1595L733.5 1607L757.5 1574L1124 1439.5L1144 1433V1271.5H1155V1263.5V1248V1233.5H1148.5L1151.5 778.5L1155.5 775.5V763.5L1148.5 759.5V731.5L1129.5 720V700L691 348.5Z"/>
+            </a>
+                    <a href="build-item.html" class="item_link">
+                <path id="3" class="build_item" data-address="Садова 12" data-flats="36" data-flats-booked="14" data-flats-sold="22" d="M1659 844L1153 853L1151 1231.5H1157V1274H1146.5V1350.5L1672 1356.5L1686 1332.5L1689 946.5L1675 888L1671.5 864H1666.5L1659 844Z"/>
+            </a>
+                    <a href="build-item.html" class="item_link">
+                <path id="4" class="build_item" data-address="Садова 13" data-flats="38" data-flats-booked="11" data-flats-sold="7" d="M2140.5 866H2175.5V1239.5H2171.5L2172.5 1300.5L1941.5 1303L1936.5 1300.5H1909H1824L1816 1285V1224H1809.5L1807.5 916L1823 872L2035 869.5V853L2140.5 851.5V866Z"/>
+            </a>
+                </svg>
+            </div>
+            <div class="information_container">
+                <div class="information">
+                    <h2>Інформація про будинок</h2>
+                    <ul class="information_list">
+                        <li class="list_item">Адреса будинку: <i>вул. <span id="address">Садова</span></i></li>
+                        <li class="list_item">Всього квартир: <i id="flats">36</i></li>
+                        <li class="list_item">Вільні квартири: <i id="flats-free">36</i></li>
+                        <li class="list_item">Заброньовані квартири: <i id="flats-booked">36</i></li>
+                        <li class="list_item">Продані квартири: <i id="flats-sold">36</i></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="modal">
+        <div class="modal_body">
+        </div>
+    </div>
+    <script async src="assets/js/custom.js"></script>
+    <script async src="assets/js/build.js"></script>
+    <script async src="assets/js/floor.js"></script>
+    <script async src="assets/js/flat.js"></script>
+    <script async src="assets/js/modal.js"></script>
+</body>
+
+</html>
